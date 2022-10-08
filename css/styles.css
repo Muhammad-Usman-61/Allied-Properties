@@ -58,8 +58,6 @@ h4 {
 
 #header {
   height: 10rem;
-  position: relative;
-  overflow: hidden;
 }
 
 .navBar {
@@ -86,7 +84,7 @@ h4 {
 
 .nav-items a:hover {
   background: rgba(0, 0, 0, 0.1);
-  color: #0a639f;
+  color: #096db8;
   border-radius: 5px;
 }
 
@@ -119,6 +117,7 @@ h4 {
     url(../images/hero_background.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
   top: -10px;
@@ -131,6 +130,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   height: 70vh;
   color: #fff;
@@ -144,6 +144,7 @@ h4 {
 .hero-content h2 {
   margin-top: 1rem;
   font-size: 2.6rem;
+  color: #fff;
 }
 
 .hero-content h3 {
@@ -155,6 +156,162 @@ h4 {
 .hero-content p {
   font-size: 2rem;
   word-spacing: 1px;
+}
+
+/* Projects */
+.project-content h1 {
+  text-align: center;
+  color: #096db8;
+  box-shadow: 0 1px 2px 0 #ed911a, 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  padding: 1rem;
+  text-transform: uppercase;
+}
+
+.project-content h2,
+h3,
+h4 {
+  text-align: center;
+  font-size: 2rem;
+  color: #ed911a;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+
+/* About */
+.about-main h1 {
+  text-align: center;
+  color: #096db8;
+  box-shadow: 0 1px 2px 0 #ed911a, 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  padding: 1rem;
+}
+
+.about-main p {
+  margin: 3rem 0;
+  font-size: 1.8rem;
+}
+.about-content {
+  background: #ccc;
+}
+.about-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-living-sub {
+  max-width: 600px;
+  padding: 2rem;
+}
+.about-living-sub h3 {
+  color: inherit;
+  text-align: left;
+}
+.about-content img {
+  width: 300px;
+  height: 300px;
+}
+
+/* Work */
+#work {
+  margin-top: 3rem;
+}
+#work h1 {
+  text-align: center;
+  color: #096db8;
+  box-shadow: 0 1px 2px 0 #ed911a, 0 2px 6px 2px rgba(60, 64, 67, 0.15);
+  padding: 1rem;
+}
+
+#work p {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: all 0.3s ease-in-out;
+  background: #f2f2f2;
+  border-radius: 3px;
+  position: relative;
+  border: 1px solid #f2f2f2;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.card:hover {
+  border: 1px solid #f2f2f2;
+  background: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.24);
+}
+
+/* Moder Houses */
+#modern-houses {
+  background: #ccc;
+  margin-top: 3rem;
+}
+
+.modern-houses-main p {
+  margin-bottom: 3rem;
+}
+
+.houses-images div {
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 400px;
+  position: relative;
+  gap: 1rem;
+}
+
+.houses-images .img1 {
+  background-image: url(../images/img1.jpg);
+}
+
+.houses-images .img2 {
+  background-image: url(../images/img3.jpg);
+}
+.houses-images div:after {
+  content: "Farm House For Sale (22 CRORE PKR)";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.5);
+  -moz-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.houses-images div:hover:after {
+  opacity: 1;
+}
+
+/* Grids */
+.grid {
+  display: grid;
+}
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -223,4 +380,18 @@ h4 {
   body {
     overflow-x: hidden;
   }
+}
+
+/*----------Scroll bar ------------*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gold;
+  border-radius: 2px;
 }
