@@ -164,7 +164,31 @@ h4 {
   font-size: 2rem;
   word-spacing: 1px;
 }
+.hero-content .scroll {
+  position: absolute;
+  font-size: 1.6rem;
+  margin-top: 65rem;
+}
+.hero-content a {
+  cursor: pointer;
+}
+.hero-content .down {
+  position: absolute;
+  margin-top: 70rem;
+  animation: anim 1s linear infinite;
+}
 
+@keyframes anim {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /* Projects */
 
 .project-content p {
