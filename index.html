@@ -18,22 +18,46 @@
       deserve.
     </title>
     <link
-      rel="shortcut icon"
-      href="images/alliedproperties-logo.png"
-      type="image/x-icon"
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/apple-touch-icon.png"
     />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <script
       src="https://kit.fontawesome.com/14589268d4.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <div class="social-links"></div>
-
     <header id="header">
       <nav class="navBar">
         <a href="/">
@@ -448,6 +472,12 @@
         <p>Copyright @ 2022 All Rights Reserved.</p>
       </div>
     </section>
+
+    <script>
+      $(window).on("load", function () {
+        $(".loader").delay(2000).fadeOut("slow");
+      });
+    </script>
 
     <script src="./script.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
