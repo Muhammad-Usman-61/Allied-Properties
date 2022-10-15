@@ -9,7 +9,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
-  height: 100%;
+  /* height: 100%; */
 }
 
 * {
@@ -414,6 +414,11 @@ h4 {
   width: 400px;
   height: 500px;
   border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.work2-main div img:hover {
+  transform: scale(1.03);
 }
 .work2-content h1 {
   margin-top: 5rem;
